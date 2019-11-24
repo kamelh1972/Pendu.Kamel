@@ -19,11 +19,13 @@ def check_player(nom) :
         with open("players", "wb") as file :
             pickler = pickle.Pickler(file)
             pickler.dump(players)
+
 #On choisit un mot au hasard dans la liste des mots
 def choose_mot() :
     index = randrange(7)
     mot = donnee.liste_mots[index]
     return mot
+
 
 #On masque toutes les lettres du mot nouvellement choisi
 def hide_word(word) :
@@ -31,6 +33,7 @@ def hide_word(word) :
     for lettre in word :
         hidden_word[lettre] = False
     return hidden_word
+
 
 #On affiche le mot avec les caractères trouvés par l'utilisateur
 def show_hidden_word(hidden_word) :
