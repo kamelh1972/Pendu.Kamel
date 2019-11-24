@@ -10,7 +10,7 @@ gamePlayer = nom
 gameScore = 0
 win = False
 
-check_player(nom)
+check_players(nom)
 word = choose_word()
 hidden_word = hide_word(word)
 

@@ -1,10 +1,10 @@
-import donnee
+from donnee import*
 import pickle
-from random import randrange
+from random import *
 
 
 # On vérifie que l'utilisateur existe, et si non on le crée avec un score nul
-def check_player(nom) :
+def check_players(nom) :
     players = {}
     with open("players", "rb") as file :
         unpickler = pickle.Unpickler(file)
